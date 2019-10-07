@@ -8,4 +8,4 @@ COPY . .
 # 依存モジュールをインストールします
 RUN npm install
 
-
+CMD npm run serve
