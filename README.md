@@ -11,8 +11,8 @@
     go run main.go
     npm run serve
 
-  cp frontend/dist/.index.html frontend/dist/index.html
-  cp frontend/public/.index.html frontend/public/index.html
+  cp web/dist/.index.html web/dist/index.html
+  cp web/public/.index.html web/public/index.html
 ```
 
 # TODO
@@ -49,7 +49,7 @@ $ sudo heroku container:push --recursive
 ```
 - herokuへのデプロイ
 ```
-$ heroku container:release frontend
+$ heroku container:release web
 ```
 
 - heroku上でのdocker状況確認
@@ -59,14 +59,14 @@ $ heroku ps
 
 - スケール変更
 ```
-$ heroku ps:scale frontend=1
+$ heroku ps:scale web=1
 $ heroku ps:scale backend=1
 ```
 
 - クラッシュしていて止めたい時
 ```
 $ heroku restart
-$ heroku ps:scale frontend=0
+$ heroku ps:scale web=0
 $ heroku ps:scale backend=0
 ```
 
@@ -79,4 +79,9 @@ $ heroku local web
 - ビルドが長引く問題とか
 ```
 $ heroku builds:cancel
+```
+
+- herokuのログ
+```
+$ heroku logs -t 
 ```
