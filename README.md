@@ -75,3 +75,8 @@ $ heroku ps:scale backend=0
 ```
 $ heroku local web
 ```
+
+- ビルドが長引く問題とか
+```
+$ heroku builds:cancel
+```
