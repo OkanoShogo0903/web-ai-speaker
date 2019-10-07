@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - 8080:8080
+    volumes:
+      - ./backend:/api
+    command: go run /api/main.go 8080
+
+  web:
+    build: ./web
+    ports:
+      - 5000:5000
+    volumes:
+      - ./web:/app
+    command: cd /app && npm run serve
+
