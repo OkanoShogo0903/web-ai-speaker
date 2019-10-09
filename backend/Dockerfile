@@ -5,4 +5,4 @@ WORKDIR /api
 COPY . .
 ENV GO111MODULE=on
 
-CMD go run main.go 5000
+CMD go run main.go 8080
