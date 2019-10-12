@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/OkanoShogo0903/web-ai-speaker-frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/OkanoShogo0903/web-ai-speaker-backend.git
