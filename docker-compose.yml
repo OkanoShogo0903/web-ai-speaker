@@ -7,13 +7,13 @@ services:
       - 8080:8080
     volumes:
       - ./backend:/api
-    command: go run /api/main.go 8080
+    command: go run /api/main.go
 
-  web:
-    build: ./web
+  frontend:
+    build: ./frontend
     ports:
       - 5000:5000
     volumes:
-      - ./web:/app
-    command: cd /app && npm run serve
+      - ./frontend:/app
+    command: bash -c "export PATH=5000 && cd /app && npm run serve"
 

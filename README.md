@@ -85,3 +85,21 @@ $ heroku builds:cancel
 ```
 $ heroku logs -t 
 ```
+
+- 明日の自分へ
+デプロイで吐かれるginのエラーを解決せよ
+```
+2019-10-09T12:23:54.84613+00:00 app[web.1]: invalid character 'h' looking for beginning of value
+2019-10-09T12:23:54.846132+00:00 app[web.1]: /api/controller/speech_recog.go:94 (0x992abd)
+2019-10-09T12:23:54.846133+00:00 app[web.1]: SpeechPost.func1: panic(err)
+```
+
+- ビルドタイプの変更(nodejs指定だとpackage.jsonを要求されたりする)
+```
+$ heroku buildpacks:clear
+```
+
+- デプロイタイプの変更
+```
+$ heroku container:push web
+```
