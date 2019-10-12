@@ -4,6 +4,8 @@
 
 これはそんな方に贈る、誰でも簡単にブラウザ上で使えるAIスピーカーです。
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a5f1ea19-7eff-4808-935f-15802d06ba8f/deploy-status)](https://app.netlify.com/sites/wonderful-lumiere-a11a2e/deploys)
+
 ![image](https://user-images.githubusercontent.com/25472671/65835454-37bbef00-e321-11e9-85a4-a3670d18eb6f.png)
 
 ## How to use
@@ -14,6 +16,8 @@
   cp web/dist/.index.html web/dist/index.html
   cp web/public/.index.html web/public/index.html
 ```
+
+
 
 # TODO
 ## 優先度 高
@@ -87,7 +91,7 @@ $ heroku logs -t
 ```
 
 - 明日の自分へ
-デプロイで吐かれるginのエラーを解決せよ
+ローカルでは通るがデプロイ時では吐かれるginのエラーを解決せよ
 ```
 2019-10-09T12:23:54.84613+00:00 app[web.1]: invalid character 'h' looking for beginning of value
 2019-10-09T12:23:54.846132+00:00 app[web.1]: /api/controller/speech_recog.go:94 (0x992abd)
